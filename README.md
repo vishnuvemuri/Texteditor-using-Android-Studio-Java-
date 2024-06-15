@@ -22,7 +22,7 @@ Clone the Repository:
 
 sh
 Copy code
-git clone https://github.com/yourusername/texteditor-android.git
+git clone https://github.com/vishnuvemuri/texteditor-android.git
 cd texteditor-android
 Open in Android Studio:
 
