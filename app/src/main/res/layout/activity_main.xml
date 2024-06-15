@@ -1,0 +1,78 @@
+<!-- res/layout/activity_main.xml -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/EditText"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:hint="Enter your text"
+        android:inputType="textMultiLine"
+        android:layout_marginStart="20dp"/>
+    <!-- dropdown code for selecting color-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select Color"
+        android:layout_margin="16dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        >
+        <AutoCompleteTextView
+            android:id="@+id/autoComplete_textview_selectColor"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="none"/>
+    </com.google.android.material.textfield.TextInputLayout>
+<!-- dropdown code for selecting style-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select style"
+        android:layout_margin="16dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        >
+        <AutoCompleteTextView
+            android:id="@+id/autoComplete_textview_selectStyle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="none"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- dropdown code for selecting style-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select fonts"
+        android:layout_margin="16dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        >
+        <AutoCompleteTextView
+            android:id="@+id/autoComplete_textview_selectFont"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="none"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- dropdown code for Alignment-->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Select Text Alignment"
+        android:layout_margin="16dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        >
+        <AutoCompleteTextView
+            android:id="@+id/autoComplete_textview_selectAlignment"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="none"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+</LinearLayout>
